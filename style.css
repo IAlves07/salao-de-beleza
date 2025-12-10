@@ -1,0 +1,266 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+:root {
+    --cor-de-fundo: #252627;
+    --cor-da-fonte: #ffffff;
+    --cor-de-fundo-2: #c4bdac;
+}
+
+.imagem_de_fundo {
+    background-image: url(img/Imagem\ de\ fundo.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    /*Preenche a tela toda*/
+    min-height: 100vh;
+    /*height também funciona*/
+}
+
+.titulo_e_paragrafo {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: #ffffff;
+}
+
+.titulo {
+    font-size: 45px;
+}
+
+.paragrafo {
+    font-size: 25px;
+}
+
+
+
+
+
+.subtitulo {
+    position: absolute;
+    top: 45px;
+}
+
+.linha_branca {
+    position: absolute;/*Cria a linha branca*/
+    top: 80px; /*Posiciona a linha no topo da página*/    
+    width: 90%; /*Ocupa 90% da tela*/
+    max-width: 1200px;/*Esse elemento também precisa ser mudado para fazer efeito no width e a linha aumentar o tamanho*/
+    height: 1px;
+    background-color: transparent;
+    border-bottom: 1px solid #ffffff;/*Cria uma linha*/    
+    margin: 10px auto;
+}
+
+
+
+/* ---------------------------------------SEÇÃO 2 -------------------------------------------------*/
+
+.secao_2 {
+    /*Propriedades do elemento PAI*/
+    background-color: var(--cor-de-fundo);
+    color: #f0e6d2;
+    padding: 230px 40px;/*Esse padding serviu para criar o fundo, pois ele cria uma distância dos lados em cima e em baixo, entre o elemento que nesse caso é o H2*/
+    /*display: flex;
+    justify-content: center; Pra essa propriedade funcionar é necessário usar o display: flex*/
+}
+
+.subtitulo_secao_2 {
+    font-size: 50px;
+    font-weight: 400;
+
+    /*line-height: 1.5; espaço entre os textos*/
+
+    max-width: 900px;
+    /*Limita a largura em telas grandes. A tela tem 1400 ele pega 900 e o que sobra divide por 2, por isso que o margin: 0 auto; centraliza o texto*/
+
+    text-align: center;
+    margin: 0 auto;
+    /*Essa é outra maneira de centralizar o texto. Coloquei o max de 900px o restante que sobra ele divide por 2 e centraliza o texto*/
+}
+
+.subtitulo_secao_2 em {
+    /*Itálico*/
+    font-style: italic;
+}
+
+/* ---------------------------------------SEÇÃO 3 -------------------------------------------------*/
+
+
+.secao_3{ /*Conteiner principal*/
+    background-color: var(--cor-de-fundo-2);
+    display: grid;
+    grid-template-columns: 1fr 1fr; /*Divide a tela em 2 50% 50%*/
+    grid-template-rows: auto auto; /*Ele diz ao navegador para automaticamente ajustar a altura de cada linha para ser exatamente o suficiente para caber o conteúdo mais alto nela.*/
+    gap: 40px 60px; /*Vertical e horizontal*/
+    align-items: center; /*Alinha em relação ao elemento maior*/
+    padding: 40px 40px; /*Altura x Largura*/
+}
+
+.img_grid_1, .img_grid_2{
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+}
+
+.texto_inferior{
+    font-size: 20px;
+    color:#383736;
+    line-height:1.6; /*Espaço entre as linhas do texto. O espaçamento entre uma linha e outra*/
+}
+
+.subtitulo_secao_3{
+    font-size:55px;
+    font-weight: 400;
+    color: #383736;
+}
+
+.linha_cinza{
+    height: 1px;
+    width: 615px;
+    background-color: #88847a;
+    margin: 20px 0;
+}
+
+/*Responsividade*/
+@media (max-width:768px){
+    .secao_3{ /* Em telas pequenas, volta para 1 coluna */
+        grid-template-columns: 1fr;
+        padding: 80px 20px;
+    }
+}
+
+/* ---------------------------------------SEÇÃO 4 -------------------------------------------------*/
+
+
+.secao_4{
+    padding: 100px 40px;
+    background-color: var(--cor-de-fundo);
+    text-align: center; /*Centraliza os textos da seção toda.*/
+    color: #ffffff;
+}
+
+/*Cabeçalho da seção*/
+.texto_superior_4{
+    font-size:55px;
+    font-weight: 400;
+    margin-bottom: 20px; /*Espaço entre o título e a linha*/
+    margin-top: 0;
+}
+
+.linha_preta{
+    width: 90%;
+    /*max-width: 600px; Vai limitar a largura para não ficar gigante em telas maiores*/
+    height: 1px;
+    margin: 0 auto 80px auto;
+    background-color: #ffffff;
+}
+
+.imagens_grid_container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr); /*Não pode ter espaços nessa linha senão não funciona. Divide a largura total por 3*/
+    gap: 60px 40px;
+    max-width: 1200px; /*Limite de largura*/
+    margin: 0 auto; 
+}
+
+.cartao_servico{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.cartao_servico img{
+    width: 100%;
+    aspect-ratio: 1/1;
+    object-fit: cover;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.conteudo_cartao{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.categoria{
+    font-size: 12px;
+    text-transform: uppercase; /*Transforma em maiúsculo*/
+    letter-spacing: 1px; /*Espaço entre as letras*/
+    opacity: 0.8;
+    margin-bottom: 5px;
+}
+
+.linha_pequena{
+    width: 90px;
+    height: 1px;
+    background-color: #ffffff;
+    opacity: 0.5;
+    margin-bottom: 5px;
+}
+
+.titulo_servico{
+    font-size: 24px;
+    font-weight: 400;
+    margin-bottom: 5px;
+}
+
+.preco{
+    font-size: 15px;
+    opacity: 0.5;
+    font-style: italic;
+}
+
+.btn_marcar_horario {
+    display: block;
+    /*Links como <a> <span> são considerados elementos e não é possível adicionar width, height ou margin. Pra ativar eu tenho que usar o display*/
+    border: 2px solid;
+    padding: 7px 0;
+    /*Distância do conteúdo pras bordas*/
+    width: 250px;
+    text-align: center;
+    color: white;
+    text-decoration: none;
+    background-color: transparent;
+    transition: 0.3s, 0.3s;
+    /*margin-top: 50px; /*Gap entre o botão e o título principal*/
+    margin: 50px auto;
+}
+
+.btn_marcar_horario:hover {
+    transform: scale(1.01);
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
+    /*Cria sombra ao redor do elemento 15px é o raio de desfoque*/
+    cursor: pointer;
+}
+
+
+
+
+/* --- RESPONSIVIDADE --- */
+@media (max-width: 900px) {
+    /* Em tablets, talvez 2 colunas fique melhor que 3 */
+    .imagens_grid_container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 600px) {
+    /* Em celulares, 1 coluna */
+    .imagens_grid_container {
+        grid-template-columns: 1fr;
+        gap: 40px;
+    }
+    
+    .texto_superior_4 {
+        font-size: 40px;
+    }
+}
+
+
+
+
+

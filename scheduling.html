@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Agendamentos</title>
+    <link rel="stylesheet" href="scheduling.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+
+<body>
+    <nav class="navbar-topo">
+        <!--nav é uma teg semântica e indica ao navegador que esse bloco contém links ou menus de navageação-->
+        <a href="index.html" class="btn-voltar-home">
+            <i class="fas-fa-arrow-left">Voltar para o início</i>
+            <!--Tag <i> é usada para inserir ícones, nesse caso a seta para esquerda. "fas- é o estilo solid,fa-arrow-left" nome do ícone. Ele puxa esses ícones do Font Awesome-->
+        </a>
+    </nav>
+
+    <!---------------------------------------------Agendamento 1------------------------------------>
+
+
+    <div class="container-agendamento">
+
+        <div id="passo1" class="passo">
+            <h2>Escolha o profissional</h2>
+            <div class="grid-profissionais" id="lista-profissionais"></div>
+        </div>
+
+
+        <div id="passo2" class="passo">
+            <h2>Escolha a data e hora</h2>
+            <p class="info-selecao">Profissional <span id="pro-selecionado"
+                    style="color:#c4bdac; font-weight: bold;"></span></p>
+
+            <input type="date" id="data-escolhida" class="input-padrao"> <!--style="text-align: center;"-->
+            <!--Esse input insere o calendário-->
+
+            <div class="grid-horarios" id="lista-horarios"></div>
+
+            <button class="btn-acao" onclick="irParaResumo()">Continuar</button>
+            <button class="btn-acao btn-secundario" onclick="voltarPasso(1)">Escolher outro profissional</button>
+        </div>
+
+        <div id="passo3" class="passo">
+            <h2>Finalizar Agendamento</h2>
+
+            <div class="resumo-box">
+                <div class="item-resumo"><strong>Profissional</strong><span id="resumo-pro"></span></div>
+                <div class="item-resumo"><strong>Data</strong><span id="resumo-data">...</span></div>
+                <div class="item-resumo"><strong>Horário</strong><span id="resumo-hora">...</span></div>
+            </div>
+
+
+            <div class="form-final">
+                <label class="label-campo">Seu nome completo</label>
+                <input type="text" id="nome-cliente" class="input-padrao" placeholder="Digite seu nome aqui...">
+                
+<!--Tag option cria as opções para o usuário escolher-->
+                <label class="label-campo">Selecione o serviço</label>
+                <select id="servico-cliente" class="input-padrao">
+                    <option value="" disabled selected>Clique para escolher...</option>
+                    <option value="Corte de Cabelo">Corte de cabelo</option>
+                    <option value="Escova e Modelagem">Escova e Modelagem</option>
+                    <option value="Coloração e Mechas">Coloração e Mechas</option>
+                    <option value="Maquiagem Profissional">Maquiagem Profissional</option>
+                    <option value="Hidratação Profunda">Hidratação Profunda</option>
+                    <option value="Tratamento de Queratina">Tratamento de Queratina</option>
+                    <option value="Design de Sobrancelhas">Design de Sobrancelhas</option>
+                </select>
+            </div>
+
+            <button class="btn-acao" onclick="finalizarAgendamento()">Confirmar Agendamento</button>
+            <button class="btn-acao btn-secundario" onclick="voltarPasso(2)">Alterar Horário</button>
+        </div>
+
+        <div id="mensagem-sucesso">
+            <i class="fas-fa-check-circle icone-check"></i>
+            <h2>Agendamento Realizado</h2>
+            <p class="texto-sucesso" id="texto-confirmacao-final"></p>
+            <a href="index.html" class="btn-acao" style="text-decoration: none; text-align: center">VOLTAR AO INÍCIO</a>
+        </div>
+    </div>
+
+    <script src="scheduling.js"></script>
+</body>
+
+</html>
