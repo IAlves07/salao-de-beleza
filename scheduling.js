@@ -1,3 +1,7 @@
+//Array é o colchetes. É como uma gaveta e as chaves são como as pastas dos clientes. Cada profissional recebeu um ID único tipo um cpf exemplo: 1,2,3... isso facilita pro sistema encontrar.
+//O nome dos profissionais é o que vai aparecer na tela para o cliente. Nessa array eu não estou guardando a foto, eu estou guardando o endereço, o caminho da foto, sendo assim o código vai ler
+//o caminho e e procurar essa imagem para exibir.
+
 const profissionais = [
     {id: 1, nome: "Ana Silva", img: "img/Loira.png"},
     {id: 2, nome: "Maria Thereza", img: "img/Modelos.png"},
@@ -168,5 +172,6 @@ function finalizarAgendamento(){
     sucesso.style.display = "block";
     sucesso.scrollIntoView({behavior: "smooth"});
 }
+
 
 
