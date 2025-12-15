@@ -49,8 +49,14 @@ O fluxo de agendamento foi construído com lógica de **"Wizard"** (etapas):
 
 ## Estrutura do Código
 
-O projeto segue uma organização limpa de arquivos:
-├── index.html # Página Inicial (Landing Page) ├── scheduling.html # Página do Sistema de Agendamento ├── style.css # Estilos da Home ├── scheduling.css # Estilos específicos do Agendamento ├── scheduling.js # Lógica do Agendamento (DOM, Objetos, Funções) └── img/ # Pasta com os assets (imagens)
+```text
+/
+├── index.html          # Página Inicial (Landing Page)
+├── scheduling.html     # Página do Sistema de Agendamento
+├── style.css           # Estilos globais e da Home
+├── scheduling.css      # Estilos específicos do Agendamento
+├── scheduling.js       # Lógica do Agendamento (DOM, Objetos, Funções)
+└── img/                # Pasta com os assets (imagens do projeto)
 
 ## Aprendizados
 
