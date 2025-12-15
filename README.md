@@ -8,7 +8,7 @@
 
 ## Sobre o Projeto
 
-Este projeto foi desenvolvido como parte dos meus estudos em **Desenvolvimento Full Stack**. O objetivo principal foi criar uma aplicação front-end sem o uso de frameworks como React ou Vue, focando puramente na lógica do **Vanilla JavaScript** e estilização avançada com **CSS**.
+Este projeto foi desenvolvido como parte dos meus estudos em **Desenvolvimento Full Stack**. O objetivo principal foi criar uma aplicação front-end sem o uso de frameworks como React ou Vue, focando puramente na lógica do **JavaScript** e estilização avançada com **CSS**.
 
 O sistema simula a experiência real de um cliente: desde conhecer os serviços na página inicial até a confirmação de um agendamento com escolha de profissional, data e hora.
 
@@ -49,14 +49,12 @@ O fluxo de agendamento foi construído com lógica de **"Wizard"** (etapas):
 
 ## Estrutura do Código
 
-```text
-/
-├── index.html          # Página Inicial (Landing Page)
-├── scheduling.html     # Página do Sistema de Agendamento
-├── style.css           # Estilos globais e da Home
-├── scheduling.css      # Estilos específicos do Agendamento
-├── scheduling.js       # Lógica do Agendamento (DOM, Objetos, Funções)
-└── img/                # Pasta com os assets (imagens do projeto)
+- **index.html**: Página Inicial (Landing Page).
+- **scheduling.html**: Página do Sistema de Agendamento.
+- **style.css**: Estilos globais e da Home.
+- **scheduling.css**: Estilos específicos do Agendamento.
+- **scheduling.js**: Lógica do Agendamento (DOM, Objetos, Funções).
+- **img/**: Pasta com as imagens do projeto.
 
 ## Aprendizados
 
