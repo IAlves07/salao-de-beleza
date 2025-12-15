@@ -75,4 +75,4 @@ Durante o desenvolvimento, foquei em conceitos essenciais da linguagem:
 
 1. Clone o repositório:
    ```bash
-   git clone git@github.com:IAlves07/salao-de-beleza.git
+   git clone git@github.com:IAlves07/salao-de-beleza.git](https://github.com/IAlves07/salao-de-beleza.git
