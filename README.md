@@ -7,9 +7,7 @@
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
 <br>
-
-## [Clique aqui para ver o site online](https://ialves07.github.io/salao-de-beleza/)
-
+<a href="https://ialves07.github.io/salao-de-beleza/" target="_blank">Clique aqui para ver o site online</a>
 <br>
 
 ## Sobre o Projeto
