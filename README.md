@@ -7,13 +7,13 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
-## 💻 Sobre o Projeto
+## Sobre o Projeto
 
 Este projeto foi desenvolvido como parte dos meus estudos em **Desenvolvimento Full Stack**. O objetivo principal foi criar uma aplicação front-end sem o uso de frameworks como React ou Vue, focando puramente na lógica do **Vanilla JavaScript** e estilização avançada com **CSS**.
 
 O sistema simula a experiência real de um cliente: desde conhecer os serviços na página inicial até a confirmação de um agendamento com escolha de profissional, data e hora.
 
-## 🛠 Tecnologias Utilizadas
+## Tecnologias Utilizadas
 
 * **HTML5 Semântico:** Estruturação correta do conteúdo (`<nav>`, `<section>`, etc).
 * **CSS3 Moderno:**
@@ -28,7 +28,7 @@ O sistema simula a experiência real de um cliente: desde conhecer os serviços 
     * **Event Listeners:** Interatividade na seleção de cards e botões.
 * **Font Awesome:** Ícones vetoriais para interface.
 
-## ⚙️ Funcionalidades
+## Funcionalidades
 
 ### 1. Landing Page (Institucional)
 * Apresentação da marca com design "Dark Mode" elegante.
@@ -48,12 +48,12 @@ O fluxo de agendamento foi construído com lógica de **"Wizard"** (etapas):
     * Validação final de formulário (nome e serviço).
     * Exibição de um resumo claro com os dados escolhidos antes da confirmação.
 
-## 📂 Estrutura do Código
+## Estrutura do Código
 
 O projeto segue uma organização limpa de arquivos:
 ├── index.html # Página Inicial (Landing Page) ├── scheduling.html # Página do Sistema de Agendamento ├── style.css # Estilos da Home ├── scheduling.css # Estilos específicos do Agendamento ├── scheduling.js # Lógica do Agendamento (DOM, Objetos, Funções) └── img/ # Pasta com os assets (imagens)
 
-## 🧠 Aprendizados Destacados
+## Aprendizados
 
 Durante o desenvolvimento, foquei em conceitos essenciais da linguagem:
 
@@ -62,7 +62,7 @@ Durante o desenvolvimento, foquei em conceitos essenciais da linguagem:
 - **Data e Hora:** Configuração de restrições no calendário utilizando `new Date()` e `.toISOString()`.
 - **CSS Responsivo:** Adaptação do layout via Grid Template Columns, alternando entre 3 colunas no Desktop e 1 no Mobile.
 
-## 🚀 Como executar
+## Como executar
 
 1. Clone o repositório:
    ```bash
