@@ -1,8 +1,7 @@
-# Beauty Salon - Website & Sistema de Agendamento
+# Salão de Beleza - Website & Sistema de Agendamento
 
-> Um site responsivo para um salão de beleza premium, integrando uma landing page ncom um sistema funcional de agendamento de horários via JavaScript.
+> Um site responsivo para um salão de beleza moderno e sofisticado, integrando uma landing page com um sistema funcional de agendamento de horários via JavaScript.
 
-![Status do Projeto](https://img.shields.io/badge/Status-Concluído-brightgreen)
 ![HTML5](https://img.shields.io/badge/HTML5-E34F26?style=flat&logo=html5&logoColor=white)
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
@@ -30,7 +29,7 @@ O sistema simula a experiência real de um cliente: desde conhecer os serviços 
 
 ## Funcionalidades
 
-### 1. Landing Page (Institucional)
+### 1. Landing Page
 * Apresentação da marca com design "Dark Mode" elegante.
 * Galeria de serviços com preços.
 * Botões de Call-to-Action (CTA) direcionando para o agendamento.
