@@ -6,6 +6,12 @@
 ![CSS3](https://img.shields.io/badge/CSS3-1572B6?style=flat&logo=css3&logoColor=white)
 ![JavaScript](https://img.shields.io/badge/JavaScript-F7DF1E?style=flat&logo=javascript&logoColor=black)
 
+<br>
+
+## [Clique aqui para ver o site online](https://ialves07.github.io/salao-de-beleza/)
+
+<br>
+
 ## Sobre o Projeto
 
 Este projeto foi desenvolvido como parte dos meus estudos em **Desenvolvimento Full Stack**. O objetivo principal foi criar uma aplicação front-end sem o uso de frameworks como React ou Vue, focando puramente na lógica do **JavaScript** e estilização avançada com **CSS**.
@@ -69,4 +75,4 @@ Durante o desenvolvimento, foquei em conceitos essenciais da linguagem:
 
 1. Clone o repositório:
    ```bash
-   git clone [https://github.com/SEU-USUARIO/luxe-salon.git](https://github.com/SEU-USUARIO/luxe-salon.git)
+   git clone git@github.com:IAlves07/salao-de-beleza.git
